@@ -1,12 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwind test</title>
+    <title>Authentication page</title>
     <link rel="stylesheet" href="assets\styles.css" />
   </head>
-  <body class="flex items-center justify-center bg-gray-100">
-    <h1 class="text-xl font-bold text-red-600">tailwind test</h1>
+  <body class="min-h-screen bg-gray-500 flex items-center justify-center p-6">
+    <main class="w- full max-w-md bg-white rounded-2xl p-8">
+      <h1 class="text-2xl font-bold text-blue-600 text-center mb-6">
+        Social Media Platform
+      </h1>
+      <form class="space-y-4" method="post" action="/profile/index.html">
+        <label class="block">
+          <span class="block text-sm font-medium mb-1">Email:</span>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full rounded-lg border-2 border-gray-500 px-3 py-2"
+          />
+        </label>
+        <label class="block">
+          <span class="block text-sm font-medium mb-1">Password:</span>
+          <input
+            type="password"
+            name="password"
+            minlength="8"
+            required
+            class="w-full rounded-lg border-2 border-gray-500 px-3 py-2"
+          />
+          <small class="text-gray-500 text-xs">Minimum 8 characters</small>
+        </label>
+        <button
+          class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-800"
+        >
+          Log in / Register
+        </button>
+      </form>
+    </main>
   </body>
 </html>
