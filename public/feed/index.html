@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed Page</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body class="bg-gray-500 min-h-screen">
+    <header class="bg-white border-b">
+      <div
+        class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between"
+      >
+        <a href="/" class="font-bold">Social</a>
+        <nav class="hidden sm:flex gap-4">
+          <a class="hover:underline" href="index.html">Feed</a>
+          <a class="hover:underline" href="../profile/index.html">Profile</a>
+        </nav>
+        <button class="sm:hidden p-2" aria-label="Menu">☰</button>
+      </div>
+    </header>
+    <main class="max-w-5xl mx-auto p-4 space-y-6">
+      <section class="bg-white p-4 rounded-xl shadow grid gap-3 sm-grid-cols-3">
+        <input
+          type="search"
+          placeholder="Search posts..."
+          class="border rounded-lg px-3 py-2 sm-col-span-2"
+        />
+        <select class="border rounded-lg px-3 py-2">
+          <option>Newest</option>
+          <option>Oldest</option>
+          <option>Most liked</option>
+        </select>
+      </section>
+      <section class="bg-white p-4 rounded-xl shadow">
+        <form class="grid gap-3">
+          <input
+            class="border rounded-lg px-3 py-2"
+            placeholder="Post title"
+            required
+          />
+          <textarea
+            class="border rounded-lg px-3 py-2"
+            rows="3"
+            placeholder="Write text here..."
+            required
+          ></textarea>
+          <button
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg w-fit mx-auto"
+          >
+            Create post
+          </button>
+        </form>
+      </section>
+      <section class="grid gap-4 sm-grid-cols-2">
+        <article class="bg-white rounded-xl shadow overflow-hidden">
+          <img
+            class="w-full h-40 object-cover"
+            src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2076"
+            alt="thumb"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">Trip to my flower garden</h3>
+            <p class="text-sm text-gray-500">
+              Had a wonderful trip to my flower garden back home. 10/10
+              experience.
+            </p>
+            <p class="text-xs text-gray-400 mt-1">by @Fredrik • 1h</p>
+          </div>
+        </article>
+        <article class="bg-white rounded-xl shadow overflow-hidden">
+          <img
+            class="w-full h-40 object-cover"
+            src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2071"
+            alt="thumb"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">The best scenery</h3>
+            <p class="text-sm text-gray-500">
+              The forest in Norway is a sight to behold. Beautiful fir and pine
+              trees standing strong and tall.
+            </p>
+            <p class="text-xs text-gray-400 mt-1">by @Elida • 2h</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
