@@ -4,7 +4,10 @@
   "description": "Css frameworks course assignment.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:css": "tailwindcss -i ./src/styles/input.css -o ./public/assets/styles.css --watch",
+    "build": "tailwindcss -i ./src/styles/input.css -o ./public/assets/styles.css --minify",
+    "serve": "http-server public -o -c-1",
+    "dev": "npm-run-all --parallel dev:css serve"
   },
   "repository": {
     "type": "git",
