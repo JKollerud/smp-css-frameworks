@@ -42,7 +42,7 @@ npm run dev
 npm run build
 ```
 
-## Project Structure:
+## Project Structure
 
 ```
 smp-css-frameworks/
@@ -65,7 +65,7 @@ smp-css-frameworks/
 └── postcss.config.js
 ```
 
-## Author:
+## Author
 
 Student: Joakim Kollerud
 
