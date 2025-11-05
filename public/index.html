@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Authentication page</title>
     <link rel="stylesheet" href="assets\styles.css" />
+    <script src="./js/auth.js"></script>
   </head>
   <body class="min-h-screen bg-gray-500 flex items-center justify-center p-6">
     <main class="w- full max-w-md bg-white rounded-2xl p-8">
       <h1 class="text-2xl font-bold text-blue-600 text-center mb-6">
         Social Media Platform
       </h1>
-      <form class="space-y-4" method="post" action="/profile/index.html">
+      <form id="authForm" class="space-y-4" action="./profile/index.html">
         <label class="block">
           <span class="block text-sm font-medium mb-1">Email:</span>
           <input
