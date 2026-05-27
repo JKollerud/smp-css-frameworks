@@ -1,3 +1,112 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Follow button toggle state */
+.follow-btn.following {
+  background-color: #fff;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+/* Lightbox overlay */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox.open {
+  display: flex;
+}
+
+#lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 0.75rem;
+  object-fit: contain;
+}
+
+#lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  color: white;
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 1;
+  z-index: 10;
+}
+
+/* Post image hover */
+.post-img-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.post-img-wrap img {
+  transition: transform 0.3s ease;
+}
+
+.post-img-wrap:hover img {
+  transform: scale(1.05);
+}
+
+.post-img-wrap .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.post-img-wrap:hover .overlay {
+  opacity: 1;
+}
+
+/* Lazy img blur-in */
+.post-img-wrap img.loading {
+  filter: blur(4px);
+  transition: filter 0.4s ease;
+}
+
+.post-img-wrap img.loaded {
+  filter: blur(0);
+}
+
+/* Active nav link */
+nav a.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Toast notification */
+#toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(4rem);
+  background: #1e293b;
+  color: #fff;
+  padding: 0.6rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  transition: transform 0.3s ease;
+  z-index: 100;
+  pointer-events: none;
+}
+
+#toast.show {
+  transform: translateX(-50%) translateY(0);
+}
