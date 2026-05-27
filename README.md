@@ -20,11 +20,8 @@ This project demonstrates the setup and use of Tailwind to create a small multi-
 ## Tech Stack
 
 - **HTML5**
-
 - **Tailwind CSS**
-
 - **Vanilla JavaScript**
-
 - **Node.js / npm for build tools**
 
 ---
@@ -52,6 +49,7 @@ smp-css-frameworks/
 │   ├── js/
 │   │   ├── auth.js
 │   │   └── menu.js
+|   |   └── profile.js
 │   ├── index.html
 │   ├── feed/
 │   │   └── index.html
